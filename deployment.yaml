@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: music-deploy
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      lab: k8s-lab
+  template:
+    metadata:
+      labels:
+        lab: k8s-lab
+    spec:
+      containers:
+      - name: music
+        image: davidkurilla/music
+        ports:
+        - containerPort: 8080

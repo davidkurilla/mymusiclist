@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>MyMusicList</title>
+        <link href="css/styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div>
+                <img src="images/logo.png" alt="MyMusicList Logo">
+            </div>
+            <h1>Welcome to MyMusicList!</h1>
+        </header>
+        <aside>
+            <h2>Add Song</h2>
+            <form action="#" method="post" id="add-song">
+                <div>
+                    <label for="title">Title</label>
+                    <input id="title" type="text" name="title" required>
+                </div>
+                <div>
+                    <label for="artist">Artist</label>
+                    <input id="artist" type="text" name="artist" required>
+                </div>
+                <div>
+                    <label for="year">Year</label>
+                    <input id="year" type="number" name="year" required>
+                </div>
+                <div>
+                    <label for="explicit">Explicit</label>
+                    <input id="explicit" type="checkbox" name="explicit" required>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </aside>
+        <main>
+            <h2>Songs List</h2>
+            <table id="songs">
+            </table>
+        </main>
+        <script src="js/data.js"></script>
+    </body>
+</html>
