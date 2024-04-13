@@ -41,7 +41,7 @@ docker pull davidkurilla/music
 
 #### Step 02: Start Docker Container
 ```bash
-docker run -p 8081:8080 -d davidkurilla/music
+docker run --name mymusiclist -p 8081:8080 -d davidkurilla/music
 ```
 
 #### Step 03: Navigate to Application
